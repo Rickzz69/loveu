@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You Animation</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ff4f81;
+            animation: pulse 1s infinite alternate, colorChange 3s infinite;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #ff4f81;
+            }
+            33% {
+                color: #ffcf4f;
+            }
+            66% {
+                color: #4fcfff;
+            }
+            100% {
+                color: #ff4f81;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>I love you</h1>
+</body>
+</html>
